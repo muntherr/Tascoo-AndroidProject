@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#141414"
+    tools:context=".SignUpFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="16dp"
+        android:background="#141414"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/SignUptxtt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/frederickathegreatregular"
+        android:letterSpacing="0.1"
+        android:text="SIGN UP"
+        android:textColor="#F9F9F9"
+        android:textSize="32dp"
+
+        app:layout_constraintBottom_toTopOf="@+id/Name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintVertical_bias="0.868" />
+
+    <EditText
+        android:id="@+id/Name"
+        android:layout_width="430dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="588dp"
+        android:cursorVisible="true"
+        android:ems="10"
+        android:gravity="top"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/Email"
+        android:layout_width="430dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="508dp"
+        android:ems="10"
+        android:gravity="top"
+        android:hint="Email"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textColorHint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Name"
+        app:layout_constraintVertical_bias="0.476" />
+
+    <EditText
+        android:id="@+id/Passwrod"
+        android:layout_width="430dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="440dp"
+        android:ems="10"
+        android:gravity="top"
+        android:hint="Password"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textColorHint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Email"
+        app:layout_constraintVertical_bias="0.367" />
+
+    <TextView
+        android:id="@+id/Appbartext"
+        android:layout_width="0dp"
+        android:layout_height="74dp"
+        android:layout_marginStart="59dp"
+        android:layout_marginEnd="59dp"
+        android:fontFamily="@font/frederickathegreatregular"
+        android:gravity="center"
+        android:letterSpacing="0.1"
+        android:text="Tascoo"
+        android:textColor="@color/white"
+        android:textSize="52dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.017"
+        tools:ignore="MissingConstraints" />
+
+
+    <Button
+        android:id="@+id/SignUpBut"
+        android:layout_width="430dp"
+        android:layout_height="55dp"
+        android:background="@drawable/buttonradius"
+        android:inputType="text"
+        android:text="Sign Up"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Email"
+        app:layout_constraintVertical_bias="0.558"
+
+        />
+
+    <Button
+        android:id="@+id/GoogleSignUp"
+        android:layout_width="430dp"
+        android:layout_height="55dp"
+        android:background="@drawable/buttonradius"
+        android:inputType="text"
+        android:text="Or SignUp with Google"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Email"
+        app:layout_constraintVertical_bias="0.704"
+
+        />
+
+    <Button
+        android:id="@+id/retbutt"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="80dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="16dp"
+
+
+        android:background="#141414"
+        android:drawableLeft="@drawable/iconsize"
+        app:layout_constraintEnd_toStartOf="@+id/Appbartext"
+
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
